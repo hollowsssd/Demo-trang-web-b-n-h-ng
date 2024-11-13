@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HOODGANG">
+    <meta name="keywords" content="HOODGANG">
+    <title>HOODGANG - đăng nhập/đăng kí</title>
+
+    <!-- link favicon -->
+    <link rel="icon" href="img/Icon.ico" type="image/x-icon">
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+    <!-- link css -->
+    <link rel="stylesheet" href="css/stylelogin.css">
+    
+    
+
+  
+</head>
+
+<body>
+    <!-- Dùng class khi bạn muốn áp dụng cùng một kiểu cho nhiều phần tử, ví dụ như các nút, hộp văn bản, tiêu đề.
+        Dùng id khi bạn muốn thao tác hoặc định kiểu cho một phần tử duy nhất trên trang, chẳng hạn như header chính, footer hoặc một phần tử cụ thể mà bạn sẽ làm việc với JavaScrip -->
+        <div class="vetrangchu"><a href="index.html">HOODGANG</a></div>
+    <div class="container" id="container">
+        <div class="form-container dang-ki">
+            <form id="formregister">
+                <h1>Tạo tài khoản</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+                <span>hoặc đăng kí bằng email</span>
+                <input type="text" placeholder="Tên" id="name">
+                <div class="baoloi" id="tenbaoloi">Tên không được để trống</div>
+                <input type="email" placeholder="Email" id="emaildk">
+                <div class="baoloi" id="emailbaoloi">Email không được để trống</div>
+                <input type="password" placeholder="Mật khẩu" id="matkhaudk">
+                <div class="baoloi" id="mkbaoloi">Mật khẩu không được để trống</div>
+                <input type="password" placeholder="Nhập lại mật khẩu" id="nhaplaimk">
+                <div class="baoloi" id="mknhaplaibaoloi">Mật khẩu không được để trống</div>
+                <button type="submit">Đăng kí</button>
+            </form>
+        </div>
+        <div class="form-container dang-nhap">
+            <form id="formlogin">
+                <h1>Đăng nhập</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+                <span>hoặc đăng nhập bằng email</span>
+                <input type="email" placeholder="Email" id="emaildn">
+                <div class="baoloi" id="emaildnbaoloi">Email không được để trống</div>
+                <input type="password" placeholder="Mật khẩu" id="matkhaudn">
+                <div class="baoloi" id="matkhaudnbaoloi">Mật khẩu không được để trống</div>
+                <i class="fas fa-eye hide" id="hienmk"></i>
+                <i class="fas fa-eye-slash" id="anmk"></i>
+                <a href="#">Bạn quên mật khẩu?</a>
+                <button type="submit">Đăng nhập</button>
+            </form>
+        </div>
+
+        <div class="toggle-container  ">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Chào mừng trở lại !</h1>
+                    <p>Bạn đã có tài khoản hãy đăng nhập nào </p>
+                    <button class="hidden" id="dangnhap">đăng nhập</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Xin chào !</h1>
+                    <p>Hãy nhấn vào nút đăng kí nếu bạn chưa có tài khoản </p>
+                    <button class="hidden" id="dangki">đăng kí</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/register.js"></script>
+    <script src="js/scrip.js"></script>
+    <script src="jsuser/common.js"></script>
+   
+    
+   
+
+
+</body>
+
+</html>
