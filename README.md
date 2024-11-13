@@ -1,4 +1,4 @@
 Người thực hiện:
 Trần Nhật Hoàng, 
-Nguyễn công minh, 
+Nguyễn Công Minh, 
 Phạm Đình Văn
